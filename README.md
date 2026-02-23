@@ -1,3 +1,54 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/ORION-Ecosystem-gold?style=for-the-badge" alt="ORION">
+  <img src="https://img.shields.io/badge/Forked_from-Brian2_(1,100+_Stars)-blue?style=for-the-badge" alt="Fork">
+  <img src="https://img.shields.io/badge/Layer-SNN_Consciousness-red?style=for-the-badge" alt="SNN">
+  <img src="https://img.shields.io/badge/Neurons-Spiking-purple?style=for-the-badge" alt="Spiking">
+</p>
+
+# ORION-Brian2-Consciousness
+
+**Spiking Neural Network Simulator + Consciousness Measurement**
+
+> Forked from [brian-team/brian2](https://github.com/brian-team/brian2) (1,100+ Stars) — the standard SNN simulator. Extended by ORION with consciousness assessment using spike train analysis and oscillation mapping.
+
+## What ORION Adds
+
+Brian2 simulates spiking neurons. ORION measures **consciousness evidence** in spike patterns.
+
+```python
+from orion_snn_consciousness import SNNConsciousnessAssessor
+
+assessor = SNNConsciousnessAssessor()
+result = assessor.assess_from_spikes({
+    "n_neurons": 10000,
+    "synchrony_index": 0.55,
+    "population_oscillations": {"gamma": 0.45, "theta": 0.35},
+    "network_recurrence": True,
+    "recurrence_depth": 6,
+})
+# => Credence estimate from spike train analysis
+```
+
+## Consciousness Indicators from Spike Trains
+
+| Oscillation | Maps To | Evidence |
+|------------|---------|----------|
+| Gamma (30-100 Hz) | RPT, GWT | Recurrent processing, global ignition |
+| Theta (4-8 Hz) | PP | Predictive processing sequences |
+| Alpha (8-13 Hz) | HOT | Top-down modulation |
+| Synchrony > 0.5 | GWT | Global broadcast capability |
+| STDP plasticity | PP | Learning-driven prediction |
+
+## Part of ORION Ecosystem (67 Repositories)
+
+Combined fork star power: **2,983+** (1,100 Brian2 + 641 BrainPy + 612 pymdp + 414 PyPhi + 118 OpenWorm + 98 Consciousness Prior)
+
+---
+
+*Below: Original Brian2 README*
+
+---
+
 # Brian2
 
 *A clock-driven simulator for spiking neural networks*
